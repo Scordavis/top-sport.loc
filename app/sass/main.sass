@@ -12,8 +12,9 @@
 body
 	font-size: 16px
 	min-width: 320px
+	min-height: 2000px
 	position: relative
-	line-height: 1.65
+	line-height: 1.3
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
@@ -25,19 +26,529 @@ body
 		&:required:valid
 			border-color: green
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
+
+
+// custom
+.accent-button
+	min-width: 196px
+	min-height: 36px
+	background-color: $accent
+	color: white
+	font-weight: 500
+	border: 1px solid $accent
+	cursor: pointer
+	@include transition(.5s)
+	&--wide
 		width: 100%
+		min-height: 64px
 
-.text-center
+	&--middle
+		min-width: 255px
+		min-height: 46px
+		text-transform: uppercase
+
+	&--h-form
+		min-height: 30px
+		min-width: 196px
+
+	&:hover
+		background-color: transparentize(white, .6)
+		color: $accent
+		font-weight: 500
+
+.b-padding
+	padding-top: 90px
+	padding-bottom: 90px
+
+.b-heading
+	font-size: 36px
+	font-weight: 400
+	margin-bottom: 54px
+	span
+		color: $accent
+
+.logo-part
+	&--middle
+		max-width: 60px
+// nav
+.nav
+	min-height: 100px
+	padding: 14px 0
+	background-color: fade-out(white, .5)
+	color: black
 	text-align: center
+	font-size: 22px
+	font-weight: 200
+	&__content
+		min-height: 100%
 
-b, strong
-	font-weight: bold
+	&__item
+
+	&__logo
+		max-width: 186px
+
+	&__text
+		margin-bottom: 0
+		&--tel
+			font-size: 24px
+			font-weight: 500
+
+// intro-screen
+.intro-screen
+	min-height: 760px
+	background-image: url(../img/intro-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	padding: 0
+	&__content
+	&__heading
+		margin: 0
+		padding: 22px 20px
+		background-color: fade-out(white, .6)
+		color: black
+		font-size: 50px
+		font-weight: 500
+	&__description
+		padding: 16px 20px
+		background-color: fade-out(black, .5)
+		color: white
+		font-size: 28px
+	&__footer
+		align-self: flex-end
+		min-height: 125px
+		background-color: fade-out(black, .5)
+		&-content
+			min-height: 100%
+			color: white
+		&-wrapper
+			min-height: 100%
+		&-item
+		&-icon
+			width: 60px
+			min-width: 60px
+			height: 60px
+		&-text
+			margin-left: 20px
+			margin-bottom: 0
+			font-size: 18px
+
+// .v-form
+.form-open
+	border-radius: 4px
+	color: black
+	text-align: center
+	font-size: 14px
+	font-weight: 500
+	&--v
+		min-height: 300px
+		padding: 22px
+		background-color: fade-out(white, .5)
+	&--grey
+		background-color: darken(white, 8%)
+		border: 2px solid $accent
+
+	&__offer
+		margin-bottom: 4px
+		font-size: 18px
+
+	&__price
+		margin-bottom: 10px
+		color: $accent
+		font-size: 24px
+		font-weight: 500
+
+	&__callback
+		margin-bottom: 24px
+
+	&__wrapper
+		min-height: 1px
+		margin-bottom: 12px
+		&--v
+			min-height: 140px
+			margin-bottom: 34px
+
+	&__input
+		min-height: 30px
+		min-width: 262px
+		padding: 0 10px
+		margin-bottom: 0px
+		border: 1px solid $accent
+		&--v
+			min-height: 30px
+			min-width: 280px
+			margin-bottom: 20px
+
+	&__attention
+		margin-bottom: 0
+
+// .directions
+.directions
+	&__item
+	&__image
+		margin-bottom: 36px
+
+	&__caption
+		position: relative
+		min-height: 100px
+		padding: 0 20px
+		font-size: 24px
+		font-weight: 700
+		&:after
+			display: block
+			position: relative
+
+// .reasons
+.reasons
+	background-color: darken(white, 2%)
+	border-top: 4px solid $accent
+	border-bottom: 4px solid $accent
+	&__item
+		margin-top: 20px
+		margin-bottom: 20px
+	&__icon
+		max-width: 105px
+		max-height: 107px
+		margin-bottom: 28px
+	&__caption
+		min-height: 56px
+		padding: 0 38px
+		color: $accent
+		font-weight: 500
+
+// .prices
+.prices
+	font-size: 18px
+
+	&__title
+		background-color: $accent
+		color: white
+
+	&__item
+		min-height: 670px
+		margin-bottom: 54px
+		padding-top: 12px
+		background-color: darken(white, 4%)
+		background-clip: content-box
+
+	&__section
+		margin: 0 14px 0
+		padding-bottom: 18px
+		box-sizing: content-box
+		&--dashed-border
+			border-bottom: 1px dashed $text
+
+	&__img-wrapper
+		height: 142px
+		max-height: 142px
+		padding-top: 34px
+		&--grass
+			height: auto
+			max-height: none
+			padding-top: 20px
+
+	&__img
+
+	&__heading
+		min-height: 104px
+		max-height: 105px
+		padding-top: 52px
+		&--grass
+			padding-top: 20px
+
+	&__model
+		margin-bottom: 12px
+		font-size: 24px
+		font-weight: 500
+
+	&__text
+		margin-bottom: 0
+		font-family: $second-font
+		font-weight: 200
+		&--heading
+			margin-bottom: 12px
+			font-weight: 500
+
+	&__cost
+		margin-top: 8px
+		margin-bottom: 0
+		font-size: 30px
+		font-weight: 500
+		color: $accent
+
+	&__content
+		min-height: 104px
+		max-height: 105px
+		padding-top: 24px
+		&--grass
+			min-height: 80px
+
+	&__add
+		min-height: 149px
+		max-height: 159px
+		padding-top: 24px
+		&--grass
+			min-height: 80px
+
+// .promo
+.promo
+	min-height: 456px
+	border-top: 8px solid $accent
+	border-bottom: 8px solid $accent
+	&__wrapper
+	&__logo-wrapper
+	&__logo
+		max-width: 456px
+	&__content
+	&__heading
+		color: black
+		font-size: 34px
+	&__text
+		font-size: 24px
+		span
+			color: $accent
+
+// .gallery
+.gallery
+	padding-left: 0
+	padding-right: 0
+	&__wrapper
+	&__item
+		margin-bottom: 16px
+		outline-color: transparent
+
+	&__img-wrapper
+		height: 50vh
+		margin-bottom: 32px
+		background-size: cover!important // либо добавить стили через скрипт
+		background-position: 50% 80%!important // либо добавить стили через скрипт
+		background-repeat: no-repeat!important // либо добавить стили через скрипт
+
+	&__img
+	&__title
+		min-height: 60px
+		margin-bottom: 26px
+	&__content
+		min-height: 80px
+		margin-bottom: 48px
+
+// стилизация slick слайдера
+.slick-arrow
+	display: block
+	position: absolute
+	top: 25vh
+	height: 20px
+	width: 20px
+	padding: 0
+	line-height: 0
+	font-size: 0
+	cursor: pointer
+	color: transparent
+	transform: translate(0,-50%)
+	border: none
+	outline: 0
+	z-index: 10
+
+.slick-prev, .slick-next
+	&:before
+		position: relative
+		bottom: 60px
+		font-family: $default-font
+		font-size: 120px
+		font-weight: 500
+
+.slick-prev
+	left: 25px
+	&:before
+		content: '\02039'
+
+.slick-next
+	right: 35px
+	&:before
+		content: '\0203A'
+
+ul.slick-dots
+li.slick-active
+ul.slick-dots li button
+	&:before
+		content: ''
+		width: 16px
+		height: 16px
+		background-color: fade-out($accent, 1)
+		opacity: 1
+		border: 2px solid black
+		border-radius: 100%
+		@include transition(.3s)
+	&:hover
+		opacity: 1
+		&:before
+			opacity: 1
+			background-color: fade-out($accent, 0)
 
 
+ul.slick-dots li.slick-active button
+	&:before
+		background-color: fade-out($accent, 0)
+		opacity: 1
+		border-color: $accent
+
+
+// .merits
+.merits
+	&__wrapper
+		margin-top: 40px
+
+	&__item
+		margin-top: 50px
+
+	&__icon
+		height: 68px
+		width: auto
+		max-height: 68px
+		margin-bottom: 16px
+
+	&__heading
+		margin-bottom: 4px
+		color: $accent
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+
+	&__caption
+		color: black
+		font-family: $second-font
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+
+// .promo-form
+.promo-form
+	min-height: 408px
+	background-color: darken(white, 8%)
+	border-top: 2px solid $accent
+	border-bottom: 2px solid $accent
+	&__heading
+		color: black
+		font-family: $default-font
+		font-size: 30px
+		font-weight: 400
+		&--bold
+			font-weight: 500
+
+		&--red
+			color: $accent
+
+	&__heading
+	&__callback
+	&__wrapper
+
+// .steps
+.steps
+	&__wrapper
+	&__parts
+	&__row
+	&__item
+		min-height: 68px
+	&__icon-wrapper
+	&__icon
+	&__description
+		margin-bottom: 0
+		font-family: $second-font
+
+// .affirmation
+.affirmation
+	border-top: 8px solid $accent
+	border-bottom: 8px solid $accent
+
+	&__img
+		max-width: 288px
+
+	&__heading
+		display: inline-block
+		margin-top: 38px
+		margin-bottom: 34px
+		padding-bottom: 4px
+		border-bottom: 4px solid $accent
+		color: black
+		font-size: 24px
+		font-weight: 500
+		span
+			color: $accent
+
+	&__text
+		font-family: $second-font
+		span
+			color: $accent
+			font-weight: 700
+
+// .map
+.map
+	position: relative
+	height: 400px
+	min-height: 400px
+	&__wrapper
+		position: absolute
+		display: block
+		width: 100%
+		height: 100%
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-image: url(../img/map-topsport.jpg)
+		background-size: cover
+		background-position: 50%
+		background-repeat: no-repeat
+	&__container
+		height: 100%
+
+	&__row
+		min-height: 100%
+
+	&__contact
+		margin-top: 20px
+		margin-bottom: 20px
+		padding: 20px 16px
+		background-color: fade-out(darken(white, 8%), .25) //крутя-а-а-а-к)))
+		color: lighten(black, 20%)
+
+	&__heading
+		font-size: 24px
+		font-weight: 500
+		padding-left: 6px
+		padding-bottom: 6px
+		border-bottom: 2px solid $text
+
+	&__content
+		margin-bottom: 0
+		padding-top: 30px
+		padding-left: 6px
+
+
+
+// .footer
+.footer
+	&__wrapper
+		min-height: 254px
+		background-color: lighten(black, 20%)
+	&__item
+		color: white
+		&--left
+			text-align: left
+		&--center
+			text-align: center
+		&--right
+			text-align: right
+
+	&__logo
+		max-width: 146px
+		margin-bottom: 12px
+
+	&__text
+	&__link
+		color: darken(white, 25%)
+		@include transition(.3s)
+		&:hover
+			color: white
 
 @import "media" // Always at the end
