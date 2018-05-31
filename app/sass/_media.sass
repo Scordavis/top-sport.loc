@@ -6,11 +6,224 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+	html
+		font-size: 16px
+
+	// custom
+	.accent-button
+		&--wide
+
+		&--middle
+
+		&--h-form
+
+	.b-padding
+		padding-top: 4rem
+		padding-bottom: 4rem
+
+	.b-heading
+		font-size: 2rem
+
+	.logo-part
+		&--middle
+
+	// .nav
+	.nav
+		&__text
+			font-size: 1.2rem
+
+	// intro-screen
+	.intro-screen
+		&__heading
+			font-size: 2.6rem
+
+	// .open-form
+	.form-open
+		&--v
+			min-height: 200px
+			padding: 16px
+
+		&__input
+			&--v
+				min-width: 200px
+				margin-bottom: 10px
+
+		&__callback
+			margin-bottom: 24px
+			&--v
+				margin-bottom: 16px
+
+		&__attention
+			font-size: 0.7rem
+
+	// .directions
+	.directions
+		&__item
+		&__image
+			margin-bottom: 36px
+
+		&__caption
+			min-height: 5rem
+			padding: 0 1rem
+			font-size: 1.2rem
+			font-weight: 700
+
+	// .reasons
+	.reasons
+		&__item
+			margin-top: 20px
+			margin-bottom: 20px
+		&__icon
+			max-width: 5.2rem
+			max-height: 5.3rem
+			margin-bottom: 1.75rem
+		&__caption
+			min-height: 56px
+			padding: 0 1.6rem
+
+	// .prices
+	.prices
+		font-size: 1.1rem
+
+		&__title
+
+		&__item
+			min-height: 670px
+
+		&__section
+			&--dashed-border
+
+		&__img-wrapper
+			&--grass
+
+		&__img
+
+		&__heading
+			min-height: 136px
+
+			&--grass
+
+		&__model
+			font-size: 1.3rem
+
+		&__text
+			&--heading
+
+			&--f-size
+				min-height: 3rem
+
+		&__cost
+
+		&__content
+			&--grass
+				min-height: 80px
+
+		&__add
+			&--grass
+
+	// .footer
+	.footer
+		&__wrapper
+			min-height: 200px
+
+
 // ≥992px
 +media-breakpoint-down(md)
+	html
+		font-size: 16px
+
+	// custom
+	.accent-button
+		min-width: 90%
+		min-height: 1.9rem
+		&--wide
+			min-height: 3rem
+
+		&--middle
+			min-width: 240px
+			min-height: 40px
+
+	.b-heading
+		text-align: center
+	// intro-screen
+	.intro-screen
+		min-height: 860px
+		&__footer
+			min-height: 125px
+			background-color: fade-out(black, .5)
+
+	.form-open
+		&--v
+			min-width: 100%
+			min-height: 10px
+
+		&__wrapper
+			min-height: 1px
+			margin-bottom: 12px
+			&--v
+				min-height: 1rem
+
+		&__input
+			min-width: 90%
+
+		&__offer
+			margin-bottom: 4px
+			font-size: 1.2rem
+
+			&--v
+				font-size: 1.2rem
+		&__callback
+			&--v
+				font-size: 1rem
+
+	// .directions
+	.directions
+		&__item
+			margin-bottom: 2rem
+		&__image
+			margin-bottom: 36px
+
+		&__caption
+			min-height: auto
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+	html
+		font-size: 18px
+
+	// custom
+
+	.b-padding
+		padding-top: 2rem
+		padding-bottom: 2rem
+
+	.accent-button
+		&--middle
+			min-width: 100%
+
+
+	.nav
+		&__logo
+			max-width: 90%
+			margin-bottom: 10px
+
+	.intro-screen
+		min-height: 150vh
+		&__heading
+			font-size: 1.5rem
+
+		&__description
+			font-size: 1.2rem
+
+	// .promo
+	.promo
+		&__heading
+			font-size: 1.6rem
+
+
+
+
 
 // ≥576px
 +media-breakpoint-down(xs)
