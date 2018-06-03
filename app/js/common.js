@@ -35,13 +35,9 @@
 		$(this).wrap("<div class='gallery__img-wrapper js-background' style='background:url(" + obj + "); '></div>")
 	})
 
-		// fixed navbar
-		// jQuery(function(f){
-		// 	var element = f('#js-fixed-navbar');
-		// 	f(window).scroll(function(){
-		// 		element['fade'+ (f(this).scrollTop() > 600 ? 'In': 'Out')](500);
-		// 	});
-		// });
+	$("[data-fancybox]").fancybox({
+		touch: false
+	});
 
 	// masked input
 	$(function () {

@@ -29,12 +29,15 @@
 
 	// .nav
 	.nav
+		height: auto
 		&__text
 			font-size: 1.2rem
 
 	// intro-screen
 	.intro-screen
 		&__heading
+			height: auto
+			min-height: auto
 			font-size: 2.6rem
 
 	// .open-form
@@ -149,6 +152,8 @@
 	.intro-screen
 		min-height: 860px
 		background-image: url(../img/intro-bg-lg.jpg)
+		&__heading
+			min-height: auto
 
 		&__footer
 			min-height: 90px
@@ -188,6 +193,11 @@
 		&__caption
 			min-height: auto
 
+	// footer
+	.footer
+		&__wrapper
+			min-height: auto
+			height: auto
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -223,8 +233,10 @@
 
 	// .promo
 	.promo
+		min-height: 640px
 		&__heading
-			font-size: 1.6rem
+			font-size: 1.4rem
+
 
 
 

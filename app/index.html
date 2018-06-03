@@ -27,31 +27,31 @@
 </head>
 
 <body>
-	<!-- .intro-screen -->
-	<div class="row align-items-between intro-screen">
-		<!-- .intro-screen__nav -->
-		<div class="col-12 d-flex align-self-start nav fixed-top">
-			<div class="container nav__wrapper">
-				<div class="row align-items-center nav__content">
-					<div class="col-sm-6 col-lg-3 col-xl-3 text-md-left nav__item">
-						<img src="img/logo-black-anno.svg" alt="" class="nav__logo">
-					</div>
-					<div class="col-sm-6 col-lg-4 col-xl-4 text-lg-center text-md-right nav__item">
-						<p class="nav__text">Покрытие из резиновой крошки <br>в Санкт-Петербурге и ЛО</p>
-					</div>
-					<div class="col-sm-6 col-lg col-xl text-lg-center text-md-left nav__item">
-						<p class="nav__text">sales@top-sport.ru</p>
-					</div>
-					<div class="col-sm-6 col-lg col-xl text-lg-center text-md-right nav__item">
-						<p class="nav__text nav__text--tel">+7 (812) 655-03-37</p>
-					</div>
+	<!-- .intro-screen__nav -->
+	<div class="col-12 d-flex align-self-start nav fixed-top">
+		<div class="container nav__wrapper">
+			<div class="row align-items-center nav__content">
+				<div class="col-sm-6 col-lg-3 col-xl-3 text-md-left nav__item">
+					<img src="img/logo-black-anno.svg" alt="" class="nav__logo">
+				</div>
+				<div class="col-sm-6 col-lg-4 col-xl-4 text-lg-center text-md-right nav__item">
+					<p class="nav__text">Покрытие из резиновой крошки <br>в Санкт-Петербурге и ЛО</p>
+				</div>
+				<div class="col-sm-6 col-lg col-xl text-lg-center text-md-left nav__item">
+					<p class="nav__text">sales@top-sport.ru</p>
+				</div>
+				<div class="col-sm-6 col-lg col-xl text-lg-center text-md-right nav__item">
+					<p class="nav__text nav__text--tel">+7 (812) 655-03-37</p>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!-- .intro-screen -->
+	<div class="row flex-column justify-content-between intro-screen">
 		<!-- .intro-screen__content -->
-		<div class="col-12">
-			<div class="container intro-screen__content">
-				<div class="row flex-lg-row flex-column justify-content-around">
+		<div class="col-12 intro-screen__content">
+			<div class="container">
+				<div class="row flex-lg-row flex-xl-row flex-xs-column flex-md-column justify-content-around">
 					<div class="col-12 col-lg-7 text-center text-lg-left">
 						<h1 class="intro-screen__heading">Профессиональная укладка покрытий из резиновой крошки</h1>
 						<p class="intro-screen__description">Строительство детских и спортивных площадок "под ключ"</p>
@@ -87,15 +87,19 @@
 		<!-- .intro-screen__footer -->
 		<div class="col-12 d-flex align-self-end intro-screen__footer">
 			<div class="container intro-screen__footer-content">
-				<div class="row flex-lg-row flex-md-column justify-content-between intro-screen__footer-wrapper">
+				<!-- .row -->
+				<div class="row flex-xs-column flex-md-row flex-wrap align-items-center justify-content-between intro-screen__footer-wrapper">
+					<!-- items -->
 					<div class="col-xl-3 col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center align-items-center align-self-center intro-screen__footer-item">
 						<img src="img/icons/ico-bolt.svg" class="d-none d-lg-block intro-screen__footer-icon" alt="">
 						<p class="text-center text-lg-left ml-3 intro-screen__footer-text">Выезд специалиста в день обращения</p>
 					</div>
+					<!-- items -->
 					<div class="col-xl-3 col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center align-items-center align-self-center intro-screen__footer-item">
 						<img src="img/icons/ico-flag.svg" class="d-none d-lg-block intro-screen__footer-icon" alt="">
 						<p class="text-center text-lg-left ml-3 intro-screen__footer-text">Европейское сырьё</p>
 					</div>
+					<!-- items -->
 					<div class="col-xl-3 col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center align-items-center align-self-center intro-screen__footer-item">
 						<img src="img/icons/ico-star.svg" class="d-none d-lg-block intro-screen__footer-icon" alt="">
 						<p class="text-center text-lg-left ml-3 intro-screen__footer-text">Гарантия 3 года</p>
@@ -673,7 +677,7 @@
 									<input type="text" class="form-open__input form-open__input--v masked-input" name="Phone" placeholder="Ваш телефон*" required>
 								</div>
 								<div class="col-12 col-md-4 col-lg-12">
-									<button type="submit" class="accent-button accent-button--middle">сделать заказ</button>
+									<button type="submit" class="accent-button">сделать заказ</button>
 								</div>
 						</form>
 						<p class="form-open__attention form-open__attention--v">Нажимая на кнопку, вы <a href="policy.html" target="_blank">даете согласие</a> на обработку своих персональных данных</p>
@@ -700,7 +704,7 @@
 	</div>
 	<!-- footer -->
 	<footer class="container-fluid d-flex flex-row align-items-center footer__wrapper">
-		<div class="py-3 py-md-0 container">
+		<div class="py-3 container">
 			<div class="row">
 				<!-- .footer__item -->
 				<div class="col-12 col-lg-4 text-center text-lg-left footer__item footer__item--left">
