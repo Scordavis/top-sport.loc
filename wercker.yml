@@ -1,0 +1,6 @@
+git clone --depth=50 --quiet --progress --no-single-branch git@github.com:Scordavis/top-sport.loc.git ./
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+remote: Counting objects: 400, done.
+remote: Compressing objects: 100% (348/348), done.
+remote: Total 400 (delta 55), reused 382 (delta 40), pack-reused 0
+git checkout -fq cd0a1ba1dc0657b316727e1fd5d6d6ade522d95a
