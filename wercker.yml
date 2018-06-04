@@ -1,6 +1,4 @@
 build:
-    steps:
-      - npm-install@1.0.5:
-          package: jshint
-          strict-ssl: false
-      - npm-test
+  steps:
+    - bundle-install:
+        cwd: src/
