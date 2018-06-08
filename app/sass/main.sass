@@ -75,6 +75,31 @@ body
 .logo-part
 	&--middle
 		max-width: 60px
+
+.tel-link
+	color: inherit
+
+.slideDown
+	animation-name: slideDown
+	-webkit-animation-name: slideDown
+	animation-duration: 4s
+	-webkit-animation-duration: 4s
+	animation-timing-function: ease
+	-webkit-animation-timing-function: ease
+	animation-iteration-count: infinite
+	-webkit-animation-iteration-count: infinite
+	visibility: visible !important
+
+
+@keyframes slideDown
+	0%
+		transform: translateY(0%)
+	50%
+		transform: translateY(40%)
+	100%
+		transform: translateY(0%)
+
+
 // nav
 .nav
 	height: 100px
@@ -84,6 +109,17 @@ body
 	text-align: center
 	font-size: 22px
 	font-weight: 200
+	&__background
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		display: none
+		width: 100%
+		height: 100%
+		background-color: darken(white, 8%)
+
 	&__content
 		height: 100%
 
@@ -102,7 +138,7 @@ body
 
 // intro-screen
 .intro-screen
-	// min-height: 760px
+	min-height: 100vh
 	height: auto
 	background-image: url(../img/intro-bg.jpg)
 	background-size: cover
@@ -110,8 +146,19 @@ body
 	background-position: 50% 50%
 	padding: 154px 0 0
 	&__content
-		min-height: 400px
-		height: 400px
+		min-height: unset
+		height: auto
+		// max-height: 60vh
+		&-row
+			height: auto
+
+	&__text
+		height: auto
+		min-height: 40px
+
+	&__form
+		height: auto
+		min-height: 40px
 
 	&__heading
 		min-height: 240px
@@ -122,31 +169,55 @@ body
 		font-size: 3.2rem
 		padding: 0.4em 0.5em
 		font-weight: 500
+
 	&__description
 		padding: 16px 20px
 		background-color: fade-out(black, .5)
 		color: white
 		font-size: 1.8rem
+
 	&__footer
-		min-height: 125px
+		max-height: 125px
+		min-height: 100px
+		margin-top: 10px
 		height: 125px
 		padding-top: 10px
 		padding-bottom: 10px
 		background-color: fade-out(black, .5)
+
 		&-content
 			height: 100%
 			color: white
+
 		&-wrapper
 			min-height: 100%
 			height: 100%
+
 		&-item
+
 		&-icon
 			width: 60px
 			min-width: 60px
 			height: 60px
+
 		&-text
 			margin-bottom: 0
 			font-size: 18px
+
+	// mouse
+	&__mouse
+		position: relative
+		top: 10vh
+		display: block;
+		margin: 1vmax auto 0;
+		a
+			width: auto;
+			img
+				display: block;
+				width: 50px;
+				margin: auto;
+				color: white;
+
 
 // .open-form
 .form-open
@@ -429,6 +500,8 @@ body
 		content: '\0203A'
 
 ul.slick-dots
+	position: relative
+
 li.slick-active
 ul.slick-dots li button
 	&:before
@@ -558,10 +631,10 @@ ul.slick-dots li.slick-active button
 		right: 0
 		bottom: 0
 		left: 0
-		background-image: url(../img/map-topsport.jpg)
-		background-size: cover
-		background-position: 50%
-		background-repeat: no-repeat
+		// background-image: url(../img/map-topsport.jpg)
+		// background-size: cover
+		// background-position: 50%
+		// background-repeat: no-repeat
 	&__container
 		height: 100%
 
