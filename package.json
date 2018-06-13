@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vladimir (Scor Davis) Solomykin",
+  "author": "Vladimir (Scor Davis)",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.4",
@@ -20,5 +20,14 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scordavis/top-sport.loc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Scordavis/top-sport.loc/issues"
+  },
+  "homepage": "https://github.com/Scordavis/top-sport.loc#readme"
 }
