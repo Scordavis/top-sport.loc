@@ -1,0 +1,4 @@
+build:
+  steps:
+    - bundle-install:
+        cwd: src/
